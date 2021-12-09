@@ -1,0 +1,6 @@
+- name: dns
+    lineinfile: 
+      dest: /etc/resolv.conf 
+      regexp: '^(.*)nameserver(.*)$' 
+      line: 'nameserver 41.226.22.50,41.226.21.50,41.226.16.50;'
+      backrefs: yes
